@@ -3,6 +3,8 @@ machine:
     GOPATH: "$HOME/go"
     PATH: "$PATH:$GOPATH/bin"
     WORK: "$GOPATH/src/github.com/$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME/"
+  services:
+    - docker
 
 dependencies:
   override:
