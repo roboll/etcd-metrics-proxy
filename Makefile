@@ -1,12 +1,12 @@
 PREFIX  := quay.io/roboll/etcd-metrics-proxy
-VERSION := 0.1
+VERSION := $(shell git describe --tags --abbrev=0 HEAD)
 
 check:
-	go vet ${PKGS}
+	go vet .
 .PHONY: check
 
 test:
-	go test -v ${PKGS} -cover -race -p=1
+	go test -v . -cover -race -p=1
 .PHONY: test
 
 build:
