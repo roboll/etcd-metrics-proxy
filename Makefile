@@ -17,6 +17,6 @@ container: build
 	docker build -t $(PREFIX):$(VERSION) .
 .PHONY: container
 
-release: container
+push: container
 	docker push $(PREFIX):$(VERSION)
-.PHONY: release
+.PHONY: push
