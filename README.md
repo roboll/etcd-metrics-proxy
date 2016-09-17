@@ -1,8 +1,8 @@
 # etcd-metrics-proxy [![CircleCI](https://circleci.com/gh/roboll/etcd-metrics-proxy.svg?style=svg)](https://circleci.com/gh/roboll/etcd-metrics-proxy)
 
-Proxy metrics from secured etcd over http. This keeps credentials locally scoped to etcd, and exposes only the metrics path for scraping from prometheus without having to give it client certs to access etcd.
+[![Docker Repository on Quay](https://quay.io/repository/roboll/etcd-metrics-proxy/status "Docker Repository on Quay")](https://quay.io/repository/roboll/etcd-metrics-proxy)
 
-Releases are published to https://quay.io/roboll/etcd-metrics-proxy
+Proxy metrics from secured etcd over http. This keeps credentials locally scoped to etcd, and exposes only the metrics path for scraping from prometheus without having to give it client certs to access etcd.
 
 ```
   -etcd-ca string
